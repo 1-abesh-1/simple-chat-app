@@ -1,0 +1,461 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  background-color: #ffffff;
+  background-image:url("../src/assets/background.png");
+  background-size: 400px;
+}
+
+.cover{
+  background-color: #9a9898;
+  width: 100%;
+  position: fixed;
+  height:15000px;
+  z-index: -1111;
+  opacity: 0.4;
+}
+
+.btn-hide{
+  background-color: #2c2a2a00;
+  border: none;
+}
+.orange-color {
+  color: #f57c00;
+}
+
+.white-color {
+  color: #000000;
+}
+
+.scrollbar-true::-webkit-scrollbar {
+  width: 10px;
+}
+
+.scrollbar-true::-webkit-scrollbar-thumb {
+  background: #ffb74d;
+  border-radius: 5px;
+}
+
+.scrollbar-true::-webkit-scrollbar-thumb:hover {
+  background: #ffa726;
+}
+
+.scrollbar-true::-webkit-scrollbar-track {
+  background: #e0e0e0;
+  border-radius: 5px;
+}
+
+/* Header and Menu */
+.header {
+  background-color: transparent;
+  width: 70%;
+  height: 50px;
+  position: fixed;
+}
+
+.header h3 {
+  margin: 3px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background-color: #ff9800;
+  width: 10%;
+  border-bottom-right-radius: 10px;
+}
+
+/* Menu design */
+.menu-bar-icon {
+  color: #ffffff;
+  position: fixed;
+  background-color: #ff9800;
+  padding: 10px;
+  top: 10px;
+  right: 10px;
+  border-radius: 5px;
+  font-size: x-large;
+}
+
+.menu-hidden {
+  width: 200px;
+  height: 200px;
+  position: fixed;
+  right: 10px;
+  top: 70px;
+ 
+  background-color: #dcdbdb;
+}
+
+.menu-toggle-btn {
+  background-color: transparent;
+  opacity: 0px;
+  border: 0px;
+}
+
+.menu button {
+  color: #424242;
+  background-color: #e0e0e0;
+  border: 0px;
+  padding: 5px;
+  font-size: 15px;
+}
+
+.menu button:hover {
+  background-color: #d6d6d6;
+  color: #000000;
+}
+
+.menu button .fas {
+  color: #ffa726;
+  padding: 5px;
+}
+
+.logout {
+  width: 100%;
+  margin: 0px;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+}
+
+/* Chat Box and Profile */
+.chat {
+  width: 70%;
+  height: 80%;
+  border-radius: 5px;
+  background-color: #ffffff;
+  opacity: 1;
+  background-size: cover;
+  position: fixed;
+  top: 100px;
+  left: 40px;
+  overflow-y: scroll;
+  overflow-wrap: break-word; 
+  white-space: normal; 
+  padding: 10px;
+}
+
+
+.chat-footer {
+  display: flex; /* Enables flexbox layout */
+  align-items: center; /* Vertically centers items */
+  justify-content: space-between; /* Ensures proper spacing */
+  width: 70%; /* Full width of the container */
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #e3e1e1; /* Background for the footer */
+  position:fixed; /* Sticks to the bottom */
+  bottom: 10px;
+  left: 40px;
+  z-index: 1000; /* Ensures it's on top */
+}
+
+.chat-input {
+  flex: 1;
+  color: #000000;
+  background-color: #eeeeee;
+  border: 0;
+  border-radius: 5px;
+  padding: 2px;
+  outline: none;
+  resize: none;
+}
+
+.chat-input::placeholder {
+  color: #121010;
+}
+
+.send-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.send-btn i {
+  color: rgb(22, 21, 21);
+  font-size: 18px;
+  background-color: #e29c56;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.mic-icon {
+  color: rgb(15, 13, 13);
+  background-color: #e29c56;
+  font-size: 18px;
+  padding: 7px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.mic-icon i {
+  margin: 0;
+}
+
+.three-dots {
+  color: rgb(17, 15, 15);
+  font-size: 18px;
+  background-color: #e29c56;
+  padding: 7px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.three-dots i {
+  margin: 0;
+}
+
+.chat-profile {
+  width: 15%;
+  height: 600px;
+  z-index: -1;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  position: fixed;
+  top: 100px;
+  right: 60px;
+  overflow-y: scroll;
+  overflow-wrap: break-word;
+  white-space: normal;
+  padding: 10px;
+}
+
+.server-segment {
+  background-color: #eeeeee;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+/* Message Style */
+.msg-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+
+.my-msg {
+  background-color: #ffecb3;
+  padding: 7px;
+  width: 40%;
+  overflow-wrap: break-word;
+  white-space: normal;
+  right: 10px;
+  align-self: flex-end;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 15px;
+  margin-top: 10px;
+}
+
+.other-msg {
+  color: #000000;
+  background-color: #f0f0f0;
+  padding: 7px;
+  width: 40%;
+  overflow-wrap: break-word;
+  white-space: normal;
+  right: 10px;
+  align-self: flex-start;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-top: 10px;
+}
+
+
+
+.my-msg .time-stamp{
+  color: #221e16;
+  font-size: 12px;
+  padding-left: 20px;
+}
+
+
+.other-msg .time-stamp{
+  color: #81817f;
+  font-size: 12px;
+  padding-left: 20px;
+}
+
+
+/* Authentication Design */
+.card {
+  width: 70%;
+  height: 600px;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  position: fixed;
+  top: 100px;
+  left: 60px;
+  overflow-wrap: break-word;
+  white-space: normal;
+  padding: 10px;
+}
+
+.in {
+  margin: 10px;
+  padding: 5px;
+  width: 50%;
+  color: #000000;
+  background-color: #e0e0e0;
+  height: 30px;
+  border: 0px;
+  border-radius: 5px;
+  transition: 0.1s;
+  outline: none;
+}
+
+.in::placeholder {
+  color: #757575;
+}
+
+.btn {
+  background-color: #ffa726;
+  color: #ffffff;
+  border: 0;
+  margin: 10px;
+  padding: 10px;
+}
+
+.alt-btn {
+  background-color: #eeeeee;
+  color: #000000;
+  border: 0px;
+  margin: 10px;
+  padding: 10px;
+  width: 40%;
+}
+
+.alt-btn i {
+  color: #ffa726;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+/*join card and room status design*/
+
+
+
+.Joincard{
+  width: 15%;
+  height: 600px;
+  z-index: -1;
+  border-radius: 5px;
+  background-color: #ffffff;
+  opacity: 1;
+ padding: 5px;
+  position: fixed;
+  top: 100px;
+  right: 40px;
+  overflow-wrap: break-word; 
+  white-space: normal; 
+  
+}
+
+.btn-j{
+  
+  width: 95%;
+  margin: 5px;
+  border: 0px;
+  
+  background-color: #eceaea;
+  color: rgb(14, 10, 10);
+  font-size: medium;
+}
+
+.btn-j i{
+  color: #1e804a;
+  padding: 10px;
+  
+}
+
+/* rooms container design */
+.Rooms{
+  width: 70%;
+  height: 600px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  opacity: 1;
+  background-size: cover;
+  position: fixed;
+  top: 100px;
+  left: 60px;
+  overflow-y: scroll;
+  overflow-wrap: break-word; 
+  white-space: normal; 
+
+}
+
+.Rooms .head{
+  color: rgb(13, 13, 13);
+  background-color: #f1f1f1;
+  width: 100%;
+  height: 30px;
+  padding-top: 5px;
+  position: sticky;
+  top:0px
+}
+.Rooms .head i{
+  color: #595b5b;
+  padding: 2px;
+}
+
+
+.no_room{
+  padding: 50px;
+  font-size: 20px;
+  color: #848686;
+}
+.no_room i{
+  font-size: 50px;
+}
+
+
+
+/*room segment*/
+.room{
+  background-color: #d9d9d7;
+  margin: 30px;
+  padding: 10px;
+  
+}
+
+
+.room .name{
+  color: #ab8240;
+  font-size: 25px;
+  margin: 5px;
+}
+
+.room .id{
+  background-color: #bcbcb9;
+  color:rgb(0, 0, 0);
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  
+}
+
+.room .id button{
+  border: none;
+  background-color: #00000000;
+  color: #132f56;
+  font-size: larger;
+}
+
+.room .visit{
+  background-color: rgb(235, 195, 121);
+  padding: 10px;
+  border: none;
+  color: #000000;
+  width: 200px;
+
+}

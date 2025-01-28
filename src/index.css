@@ -1,0 +1,24 @@
+
+
+.theme-toggle{
+  padding: 2px;
+  font-size: 20px;
+  position: fixed;
+  top:10px;
+  border: 0px;
+  border-radius: 20px;
+  right: 100px;
+  background-color: #565656;
+}
+
+.theme-toggle .active{
+  color: rgb(255, 164, 53);
+  background-color: rgb(62, 62, 61);
+  padding: 5px;
+  border-radius: 20px;
+
+}
+.theme-toggle i{
+  margin: 5px;
+ color: rgb(255, 255, 255);
+}

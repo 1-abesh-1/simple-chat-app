@@ -1,0 +1,33 @@
+/* Center the spinner in the container */
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:300px;
+    height: 400px;
+    width:400px; /* Full screen height */
+    background-color: rgb(196, 195, 195); /* Optional: Light background overlay */
+  }
+  
+  .spinner {
+    border: 8px solid #f3f3f3; /* Light gray border */
+    border-top: 8px solid #db9e34; /* Blue color for the spinner */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite; /* Infinite spinning animation */
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+  }
+  
